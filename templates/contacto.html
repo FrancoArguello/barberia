@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/reset.css" />
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto | Barberia Alura</title>
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1>
+          <a href="index.html"
+            ><img src="../img/logo.png" alt="Logo-Barberia"
+          /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mainContacto">
+      <form>
+        <fieldset>
+          <label for="nombreApellido">
+            Nombre y Apellido
+            <input
+              class="input-padron"
+              type="text"
+              id="nombreApellido"
+              placeholder="Ingresu su nombre y apellido"
+              required
+            />
+          </label>
+
+          <label for="email">
+            Email
+            <input
+              class="input-padron"
+              type="email"
+              id="email"
+              placeholder="email@dominio.com"
+              requiered
+            />
+          </label>
+
+          <label for="telefono">
+            Teléfono
+            <input
+              class="input-padron"
+              type="tel"
+              id="telefono"
+              placeholder="(xx)xxxx-xxxx"
+              requiered
+            />
+          </label>
+
+          <label for="mensaje"> Mensaje </label>
+          <textarea
+            class="input-padron"
+            name=""
+            id="mensaje"
+            cols="70"
+            rows="10"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>¿Como le gustaria que lo contactemos?</legend>
+          <label for="radio-email">
+            <input
+              type="radio"
+              id="radio-email"
+              value="email"
+              name="contacto"
+            />
+            email
+          </label>
+
+          <label for="radio-telefono">
+            <input
+              type="radio"
+              id="radio-telefono"
+              value="telefono"
+              name="contacto"
+            />
+            telefono
+          </label>
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              id="radio-whatsapp"
+              value="whatsapp"
+              name="contacto"
+              checked
+            />
+            whatsapp
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>¿En cuál horario prefiere ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+
+        <label for="">
+          <input class="checkbox" type="checkbox" checked />
+          ¿Le gutaria recibir novedades de los productos de nuestra Barberia?
+        </label>
+
+        <input class="enviar" type="submit" value="Enviar formulario" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Vierners</td>
+            <td>08h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <img src="../img/logo-blanco.png" alt="Logo-Barberia" />
+      <p class="copyright">Copyright &copy; 2023 · Franco Argüello (FullStack developer)</p>
+    </footer>
+  </body>
+</html>
