@@ -101,6 +101,8 @@ nav a:hover{
 .contenido-diferenciales{
     width:640px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .lista-diferenciales{
@@ -263,7 +265,16 @@ footer{
 }
 
 @media screen and (max-width:480px){
-    .caja, .principal{
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
         width:auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
     }
 }
